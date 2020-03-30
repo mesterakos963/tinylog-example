@@ -10,7 +10,7 @@ public class Main {
         Logger.info("This is an INFO message");
         Logger.debug("This is a DEBUG message");
         Logger.trace("This is a TRACE message");
-        Logger.info( message: "User's name is: " + System.getProperty("user.name"));
-        Logger.error(new RuntimeException("Oops"), message: "Something is wrong");
+        Logger.info("User's name is {}", System.getProperty("user.name"));
+        Logger.error(new RuntimeException("Oops"), "Something is wrong");
     }
 }
